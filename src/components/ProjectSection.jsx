@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Github as GithubIcon, ExternalLink, ArrowUpRight, Code } from 'lucide-react';
+import { ArrowUpRight, Code } from 'lucide-react';
 import { projects } from '../data/portfolio';
 
 const ProjectSection = () => {
