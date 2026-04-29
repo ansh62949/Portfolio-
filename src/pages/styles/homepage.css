@@ -2,21 +2,25 @@
 
 .homepage-logo-container {
 	display: flex;
-	justify-content: left;
+	justify-content: flex-start;
 	align-items: center;
 	padding-top: 130px;
 }
 
+/* Main container */
 .homepage-container {
 	padding-top: 25px;
+	background-color: #ffffff;
 }
 
+/* First section */
 .homepage-first-area {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
+/* Left content */
 .homepage-first-area-left-side {
 	display: flex;
 	flex-direction: column;
@@ -25,12 +29,15 @@
 
 .homepage-title {
 	width: 85% !important;
+	color: #042f2e; /* dark teal */
 }
 
 .homepage-subtitle {
 	width: 85% !important;
+	color: #475569; /* muted slate */
 }
 
+/* Right image */
 .homepage-first-area-right-side {
 	display: flex;
 	align-items: center;
@@ -43,17 +50,21 @@
 
 .homepage-image-wrapper {
 	overflow: hidden;
-	border-radius: 10%;
+	border-radius: 12%;
 	transform: rotate(3deg);
+	border: 1px solid #ccfbf1;
+	box-shadow: 0px 12px 28px rgba(13, 148, 136, 0.18);
+	background-color: #ffffff;
 }
 
 .homepage-image-wrapper img {
 	width: 100%;
 }
 
+/* Social icons */
 .homepage-socials {
 	display: flex;
-	justify-content: left;
+	justify-content: flex-start;
 	align-items: center;
 	padding-top: 30px;
 }
@@ -61,14 +72,16 @@
 .homepage-social-icon {
 	padding-right: 20px;
 	font-size: 25px;
-	transition: color 0.2s ease-in-out;
-	color: var(--secondary-color);
+	transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
+	color: #0d9488;
 }
 
 .homepage-social-icon:hover {
-	color: var(--primary-color);
+	color: #115e59;
+	transform: translateY(-2px);
 }
 
+/* After title sections */
 .homepage-after-title {
 	display: flex;
 }
@@ -93,6 +106,7 @@
 	padding-top: 30px;
 }
 
+/* Tablet & Mobile */
 @media (max-width: 1024px) {
 	.homepage-first-area {
 		flex-direction: column;
@@ -100,7 +114,7 @@
 
 	.homepage-first-area-left-side {
 		display: flex;
-		flex-direction: column; /* Changed: set direction to column */
+		flex-direction: column;
 		align-items: flex-start;
 		width: 100%;
 		order: 2;
@@ -134,16 +148,13 @@
 		flex-direction: column;
 	}
 
-	.homepage-projects {
-		flex-basis: auto;
-	}
-
-	.homepage-articles {
+	.homepage-projects,
+	.homepage-articles,
+	.homepage-works {
 		flex-basis: auto;
 	}
 
 	.homepage-works {
-		flex-basis: auto;
 		margin-left: -25px;
 		margin-right: -25px;
 	}

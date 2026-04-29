@@ -1,32 +1,35 @@
 .not-found {
 	overflow: hidden;
 	height: 100vh;
+	background-color: #ffffff;
 }
 
+/* Logo */
 .notfound-logo-container {
 	display: flex;
-	justify-content: left;
+	justify-content: flex-start;
 	padding-top: 25px;
 }
 
 .notfound-logo {
-	display: flex;
 	position: fixed;
-	border: 1px solid white;
+	border: 1px solid #e5e7eb;
 	border-radius: 50%;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
 	top: 4vh;
 	z-index: 999;
+	background-color: #ffffff;
 }
 
+/* Page Layout */
 .notfound-container {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	margin: 0;
 	padding-top: 120px;
 }
 
+/* Center Message */
 .notfound-message {
 	position: fixed;
 	display: flex;
@@ -36,62 +39,65 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-.notfound-title {
-	font-family: var(--secondary-font);
-	color: var(--primary-color);
-	font-size: 80px;
-	padding-top: 15px;
-	font-weight: 700;
-}
-
-.not-found-message {
-	color: var(--secondary-color);
-	font-size: 2rem;
-	margin: 2rem 0;
 	text-align: center;
 }
 
-.not-found-link {
-	font-size: 1.5rem;
+/* 404 Title */
+.notfound-title {
+	font-family: var(--secondary-font);
+	color: #1f2937; /* dark slate */
+	font-size: 80px;
+	font-weight: 700;
+}
+
+/* Message Text */
+.notfound-text {
+	color: #4b5563; /* muted gray */
+	font-size: 2rem;
+	margin: 1.8rem 0;
+	max-width: 520px;
+}
+
+/* Back Link */
+.notfound-link {
+	font-size: 1.4rem;
 	text-decoration: none;
-	color: #fff;
-	background-color: var(--link-color);
-	padding: 1rem 2rem;
-	border-radius: 50px;
+	color: #ffffff;
+	background-color: #2563eb; /* soft blue */
+	padding: 0.9rem 2.2rem;
+	border-radius: 999px;
 	transition: all 0.3s ease-in-out;
+	box-shadow: 0px 8px 20px rgba(37, 99, 235, 0.25);
 }
 
-.not-found-link:hover {
-	background-color: #fff;
-	color: var(--link-color);
-	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+.notfound-link:hover {
+	background-color: #1e40af;
+	color: #ffffff;
+	box-shadow: 0px 10px 25px rgba(37, 99, 235, 0.35);
+	transform: translateY(-2px);
 }
 
+/* Mobile */
 @media (max-width: 500px) {
 	.notfound-message {
 		position: absolute;
 		top: auto;
 		left: auto;
-		width: 100%;
 		transform: none;
+		width: 100%;
 	}
 
 	.notfound-title {
 		font-size: 50px;
 	}
 
-	.not-found-message {
-		width: 100%;
+	.notfound-text {
 		font-size: 15px;
-		margin-top: 10px;
-		margin-left: -5px;
-		margin-right: 32px;
+		padding: 0 20px;
 	}
 
-	.not-found-link {
-		font-size: 15px;
-		padding: 15px 15px;
+	.notfound-link {
+		font-size: 14px;
+		padding: 12px 18px;
 	}
 }

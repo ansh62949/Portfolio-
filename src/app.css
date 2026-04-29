@@ -1,27 +1,34 @@
 @import "/src/data/styles.css";
 
+/* ================= Scrollbar ================= */
 ::-webkit-scrollbar {
 	width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #f1f1f1;
+	background-color: #eef2f7; /* soft neutral */
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #383636;
-	border-radius: 5px;
+	background-color: #0f766e; /* richer teal */
+	border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background-color: rgb(0, 0, 0);
+	background-color: #115e59;
 }
 
+/* ================= Page Background ================= */
 .page-content {
-	background-color: white;
+	background: linear-gradient(
+		to bottom,
+		#ffffff 0%,
+		#f9fafb 100%
+	);
 	position: relative;
 }
 
+/* ================= Side Panels ================= */
 .page-content:before,
 .page-content:after {
 	content: "";
@@ -29,44 +36,55 @@
 	top: 0;
 	bottom: 0;
 	width: calc((100% - 1200px) / 2);
-	background-color: #fafafa;
-	border: 1px solid #f4f4f5;
+	background: linear-gradient(
+		to bottom,
+		#f8fafc,
+		#eef2f7
+	);
+	border-left: 1px solid #e5e7eb;
+	border-right: 1px solid #e5e7eb;
 }
 
 .page-content:before {
 	left: 0;
-	z-index: 1;
 }
 
 .page-content:after {
 	right: 0;
-	z-index: 1;
 }
 
+/* ================= Content Wrapper ================= */
 .content-wrapper {
 	max-width: 1000px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 2; /* keeps content above side panels */
 }
 
+/* ================= Titles ================= */
 .title {
-	color: var(--primary-color);
+	color: #022c22; /* deep teal */
 	font-family: var(--secondary-font);
-	font-size: 45px;
-	font-weight: 700;
+	font-size: 46px;
+	font-weight: 800;
+	line-height: 1.2;
 	width: 70%;
 }
 
+/* ================= Subtitles ================= */
 .subtitle {
-	padding-top: 10px;
-	color: var(--secondary-color);
-	font-size: 16px;
-	line-height: 28px;
+	padding-top: 12px;
+	color: #334155; /* slate with better contrast */
+	font-size: 17px;
+	line-height: 30px;
 	width: 70%;
-	margin-top: 25px;
+	margin-top: 22px;
 }
 
+/* ================= Footer ================= */
 .page-footer {
-	position: block;
+	position: relative;
+	margin-top: 80px;
 }
 
 .page-footer::before {
@@ -74,38 +92,39 @@
 	position: absolute;
 	left: 0;
 	right: 0;
-	border-top: 2px solid var(--tertiary-color);
+	top: -30px;
+	border-top: 1px solid #cbd5e1;
 }
 
+/* ================= Responsive ================= */
 @media (max-width: 1270px) {
 	.page-content:before,
 	.page-content:after {
-		width: calc((100% - 90%) / 2);
+		width: calc((100% - 92%) / 2);
 	}
 
 	.content-wrapper {
-		max-width: 90%;
-		padding-left: 10%;
-		padding-right: 10%;
+		max-width: 92%;
+		padding-left: 4%;
+		padding-right: 4%;
 	}
 }
 
 @media (max-width: 1024px) {
 	.page-content:before,
 	.page-content:after {
-		width: calc((100% - 950px) / 2);
+		width: calc((100% - 960px) / 2);
 	}
 
 	.content-wrapper {
-		max-width: 980px;
+		max-width: 960px;
 	}
 }
 
 @media (max-width: 800px) {
 	.content-wrapper {
-		max-width: 90%;
-		margin: 0 auto;
-		padding: 0 10px;
+		max-width: 92%;
+		padding: 0 12px;
 	}
 
 	.page-content:before,
@@ -113,10 +132,7 @@
 		display: none;
 	}
 
-	.title {
-		width: 100%;
-	}
-
+	.title,
 	.subtitle {
 		width: 100%;
 	}
