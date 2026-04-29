@@ -9,7 +9,7 @@ const Footer = () => {
           © {new Date().getFullYear()} {personalData.name}. All rights reserved.
         </p>
         <div className="flex gap-8 text-sm font-medium text-white/40">
-          <a href="#!" className="hover:text-primary transition-colors">Resume</a>
+          <a href="https://drive.google.com/file/d/1XGOXpmEhHh8JM8qcnBn_zljRsWEn7uN4/view?usp=drive_link" target="_blank" rel="noreferrer" className="hover:text-primary transition-colors">Resume</a>
           <a href="#!" className="hover:text-primary transition-colors">Privacy Policy</a>
           <a href="#!" className="hover:text-primary transition-colors">Cookie Policy</a>
         </div>

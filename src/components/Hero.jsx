@@ -57,7 +57,9 @@ const Hero = () => {
               View Projects
             </motion.a>
             <motion.a
-              href="#!"
+              href="https://drive.google.com/file/d/1XGOXpmEhHh8JM8qcnBn_zljRsWEn7uN4/view?usp=drive_link"
+              target="_blank"
+              rel="noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-4 glass text-white font-bold rounded-xl flex items-center gap-2 hover:border-primary transition-colors"
