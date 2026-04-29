@@ -84,6 +84,17 @@ const ProjectSection = () => {
                   >
                     Details
                   </Link>
+                  {project.demo && (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="px-6 py-3 bg-primary text-black font-bold rounded-xl flex items-center gap-2 hover:bg-white transition-colors"
+                    >
+                      <ArrowUpRight size={20} />
+                      Live Demo
+                    </a>
+                  )}
                   <a
                     href={project.github}
                     target="_blank"

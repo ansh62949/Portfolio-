@@ -43,6 +43,7 @@ export const projects = [
     tech: ["Java", "Spring Boot", "PostgreSQL", "Microservices"],
     metrics: ["5+ Scalable APIs", "99.9% Uptime", "<200ms Latency"],
     github: "https://github.com/anshpathak/event-ticketing",
+    demo: "https://eventticketingplatform-1.onrender.com",
     features: [
       "Real-time ticket availability tracking",
       "Secure payment integration gateway",
@@ -59,6 +60,7 @@ export const projects = [
     tech: ["Python", "NLP", "React", "Microservices", "PostgreSQL"],
     metrics: ["92% NLP Accuracy", "Real-time Tracking", "3x Faster Response"],
     github: "https://github.com/anshpathak/civicshield",
+    demo: "https://civicshield-ten.vercel.app/",
     features: [
       "AI-powered complaint categorization",
       "Interactive geospatial heatmaps",
