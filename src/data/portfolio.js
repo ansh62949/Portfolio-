@@ -17,20 +17,100 @@ export const personalData = {
 
 export const techStack = [
   {
-    category: "Backend",
-    skills: ["Java", "Spring Boot", "REST APIs", "Microservices"]
+    name: "Java",
+    capabilities: "OOP, Multithreading",
+    level: "Advanced",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
   },
   {
-    category: "AI/ML",
-    skills: ["Python", "Pandas", "NumPy", "PyTorch"]
+    name: "Spring Boot",
+    capabilities: "REST APIs, Microservices",
+    level: "Advanced",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
   },
   {
-    category: "Databases",
-    skills: ["PostgreSQL", "MySQL", "MongoDB", "Redis"]
+    name: "API Design",
+    capabilities: "Pagination, Filtering, Optimization",
+    level: "Advanced",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg"
   },
   {
-    category: "Tools",
-    skills: ["Docker", "RabbitMQ", "AWS"]
+    name: "System Design",
+    capabilities: "Layered Architecture",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain.svg"
+  },
+  {
+    name: "Python",
+    capabilities: "Data Processing",
+    level: "Advanced",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+  },
+  {
+    name: "NLP",
+    capabilities: "Text Classification",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+  },
+  {
+    name: "Pandas & NumPy",
+    capabilities: "Feature Engineering",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+  },
+  {
+    name: "PyTorch",
+    capabilities: "Model Training Basics",
+    level: "Beginner",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+  },
+  {
+    name: "PostgreSQL",
+    capabilities: "Query Optimization, Indexing",
+    level: "Advanced",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    name: "MySQL",
+    capabilities: "Relational Design",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+  },
+  {
+    name: "MongoDB",
+    capabilities: "NoSQL Schema Design",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    name: "Redis",
+    capabilities: "Caching, Optimization",
+    level: "Beginner",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  {
+    name: "Docker",
+    capabilities: "Containerization, Sandbox",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+  },
+  {
+    name: "RabbitMQ",
+    capabilities: "Async Processing, Queues",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg"
+  },
+  {
+    name: "AWS",
+    capabilities: "EC2, S3 – Basics",
+    level: "Beginner",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+  },
+  {
+    name: "Git",
+    capabilities: "Version Control",
+    level: "Advanced",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
   }
 ];
 
