@@ -35,6 +35,33 @@ const INFO = {
 
 	projects: [
 		{
+			title: "PRSense",
+			description:
+				"Repository analysis and automated pull request review platform. It performs static codebase analysis, semantic search, and automated audits by integrating with GitHub webhooks. The system cross‑references diffs against stored context and runs specialized modules to flag issues in code quality, security, styling, and test coverage.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+			linkText: "View on GitHub",
+			link: "https://github.com/ansh62949/prsense-ai",
+		},
+
+		{
+			title: "HerRide",
+			description:
+				"A women-only ride-hailing MVP for India, connecting female passengers with verified female drivers. Focused on safety with real-time emergency tools, trusted-contact ride sharing, and GPS shielding via a command center.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+			linkText: "View on GitHub",
+			link: "https://github.com/ansh62949/Herride",
+		},
+
+		{
+			title: "CodeSphere",
+			description:
+				"A distributed coding platform utilizing microservices and Docker sandboxing for secure code execution. Implemented RabbitMQ for asynchronous processing of submission queues and Redis for intelligent caching.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/java/java.png",
+			linkText: "View on GitHub",
+			link: "https://github.com/anshpathak/codesphere",
+		},
+
+		{
 			title: "Event Ticketing Platform (Backend)",
 			description:
 				"A Spring Boot–based backend system for managing events and ticket workflows. Includes event publishing, paginated listings with search, ticket management, and PostgreSQL database integration using a clean layered architecture.",

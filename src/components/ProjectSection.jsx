@@ -37,7 +37,7 @@ const ProjectSection = () => {
                 <Link to={`/project/${project.id}`}>
                   <div className="relative group overflow-hidden rounded-3xl aspect-[16/9] glass cursor-none-trigger">
                     <img
-                      src={`https://images.unsplash.com/photo-${index === 0 ? '1551434678-e076c223a692' : index === 1 ? '1518770660439-4636190af475' : '1558494949-ef010cbdcc31'}?auto=format&fit=crop&q=80&w=1200`}
+                      src={`https://images.unsplash.com/photo-${project.photoId || '1558494949-ef010cbdcc31'}?auto=format&fit=crop&q=80&w=1200`}
                       alt={project.title}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-60 group-hover:opacity-100"
                     />

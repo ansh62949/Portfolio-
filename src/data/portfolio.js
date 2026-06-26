@@ -111,10 +111,91 @@ export const techStack = [
     capabilities: "Version Control",
     level: "Advanced",
     logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+  },
+  {
+    name: "FastAPI",
+    capabilities: "Python Backend, Async APIs",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+  },
+  {
+    name: "Apache Kafka",
+    capabilities: "Event Streaming, Pub-Sub",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg"
+  },
+  {
+    name: "WebSockets",
+    capabilities: "STOMP, Real-time Chat",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+  },
+  {
+    name: "pgvector",
+    capabilities: "Vector Embeddings, RAG",
+    level: "Intermediate",
+    logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
   }
 ];
 
 export const projects = [
+  {
+    id: "prsense-ai",
+    title: "PRSense",
+    shortDesc: "Repository analysis and automated pull request review platform using vector RAG search.",
+    description: "Developed a decoupled codebase audit and review orchestrator. Integrates with GitHub Webhooks to intercept PR events, query nearest codebase context using pgvector and cosine similarity search, and concurrently execute automated agents to audit changes for security, architectural integrity, and code style concerns.",
+    tech: ["Java", "Spring Boot", "FastAPI", "Python", "pgvector", "PostgreSQL"],
+    metrics: ["1536-Dim Embeds", "Cos Similarity", "<30s Review"],
+    github: "https://github.com/ansh62949/prsense-ai",
+    demo: "https://prsense-ai.vercel.app",
+    features: [
+      "Real-time GitHub webhook PR review execution",
+      "Repository indexing with token-efficient chunking & embeddings",
+      "Concurrent audit agents for security, design patterns, styling, and test coverage",
+      "Context-aware codebase semantic search & chat using pgvector",
+      "Automated cost telemetry and execution time dashboard tracking",
+      "PDF audit report generation in clean printable corporate layouts"
+    ],
+    architecture: "Decoupled architecture utilizing a Java Spring Boot orchestrator for lifecycle, PostgreSQL/pgvector for memory, and FastAPI / Python analysis service for LLM tasks.",
+    photoId: "1618401471353"
+  },
+  {
+    id: "herride",
+    title: "HerRide",
+    shortDesc: "A women-only ride-hailing MVP concept focused on urban safety in India.",
+    description: "Designed and built an early-stage startup MVP for female passenger safety. Leveraged Spring Boot and STOMP WebSockets for real-time bilateral chats and driver-passenger matching, utilizing Redis spatial indexing (GEOADD/GEORADIUS) for sub-second nearby searches, and Kafka event bus for decoupled safety alarms.",
+    tech: ["Java", "Spring Boot", "Redis", "Apache Kafka", "PostgreSQL", "React", "Zustand"],
+    metrics: ["100% Female Drivers", "5km Radius Match", "<8s Telemetry"],
+    github: "https://github.com/ansh62949/Herride",
+    demo: "https://herride-six.vercel.app/",
+    features: [
+      "Frictionless mobile OTP authentication & female-only registration checks",
+      "Proximity-based matching query with 5km radial search using Redis GEO indices",
+      "Decoupled asynchronous notification pipelines using Apache Kafka topics",
+      "Single-tap SOS emergency trigger alerting trusted contacts via SMS with location link",
+      "Real-time websocket STOMP chat logs cached in-memory and admin dispatch board updates",
+      "Local payment gateway sandboxing simulating Razorpay checkout fallback"
+    ],
+    architecture: "Microservices routing built with Spring Boot, STOMP WebSockets, Kafka event handlers, Redis geographical store, and React frontend.",
+    photoId: "1549317661-bd32c8ce0db2"
+  },
+  {
+    id: "codesphere",
+    title: "CodeSphere – Distributed Coding Platform",
+    shortDesc: "Scalable coding environment with Docker sandboxing and async processing.",
+    description: "Architected a distributed coding platform utilizing microservices and Docker sandboxing for secure code execution. Implemented RabbitMQ for asynchronous processing of submission queues and Redis for intelligent caching, significantly reducing load on core services.",
+    tech: ["Docker", "RabbitMQ", "Redis", "Spring Boot", "MySQL"],
+    metrics: ["1000+ Concurrent Runs", "Isolate Sandbox", "40% Faster Cache"],
+    github: "https://github.com/anshpathak/codesphere",
+    features: [
+      "Secure Docker container isolation",
+      "Multi-language support (C++, Java, Python)",
+      "Async execution queue management",
+      "Real-time leaderboard updates"
+    ],
+    architecture: "Event-driven architecture using RabbitMQ for communication between the API gateway and worker nodes.",
+    photoId: "1558494949-ef010cbdcc31"
+  },
   {
     id: "event-ticketing",
     title: "Event Ticketing Platform",
@@ -130,7 +211,8 @@ export const projects = [
       "Automated email confirmation service",
       "Admin dashboard for event analytics"
     ],
-    architecture: "Microservices-based architecture with independent services for Auth, Ticketing, and Notification."
+    architecture: "Microservices-based architecture with independent services for Auth, Ticketing, and Notification.",
+    photoId: "1551434678-e076c223a692"
   },
   {
     id: "civicshield",
@@ -147,23 +229,8 @@ export const projects = [
       "Automated routing to local departments",
       "Public transparency portal"
     ],
-    architecture: "AI engine integrated via REST with a distributed microservices network for real-time data flow."
-  },
-  {
-    id: "codesphere",
-    title: "CodeSphere – Distributed Coding Platform",
-    shortDesc: "Scalable coding environment with Docker sandboxing and async processing.",
-    description: "Architected a distributed coding platform utilizing microservices and Docker sandboxing for secure code execution. Implemented RabbitMQ for asynchronous processing of submission queues and Redis for intelligent caching, significantly reducing load on core services.",
-    tech: ["Docker", "RabbitMQ", "Redis", "Spring Boot", "MySQL"],
-    metrics: ["1000+ Concurrent Runs", "Isolate Sandbox", "40% Faster Cache"],
-    github: "https://github.com/anshpathak/codesphere",
-    features: [
-      "Secure Docker container isolation",
-      "Multi-language support (C++, Java, Python)",
-      "Async execution queue management",
-      "Real-time leaderboard updates"
-    ],
-    architecture: "Event-driven architecture using RabbitMQ for communication between the API gateway and worker nodes."
+    architecture: "AI engine integrated via REST with a distributed microservices network for real-time data flow.",
+    photoId: "1518770660439-4636190af475"
   },
   {
     id: "pakson-ml",
@@ -179,7 +246,8 @@ export const projects = [
       "Real-time risk scoring",
       "Preprocessing for noise reduction"
     ],
-    architecture: "Python-based ML pipeline with integrated feature extraction using Librosa and Scikit-learn."
+    architecture: "Python-based ML pipeline with integrated feature extraction using Librosa and Scikit-learn.",
+    photoId: "1530210124550-912dc1381cb8"
   },
   {
     id: "my-world-tour",
@@ -195,7 +263,8 @@ export const projects = [
       "Mobile-first responsive layout",
       "Component-based architecture"
     ],
-    architecture: "Single Page Application (SPA) built with React 19 and modern CSS Flexbox/Grid."
+    architecture: "Single Page Application (SPA) built with React 19 and modern CSS Flexbox/Grid.",
+    photoId: "1488646953014-85cb44e25828"
   },
   {
     id: "multiclient-chat",
@@ -211,7 +280,8 @@ export const projects = [
       "Broadcast message propagation",
       "Thread pool management"
     ],
-    architecture: "Client-Server model with a dedicated Thread per connection for asynchronous message processing."
+    architecture: "Client-Server model with a dedicated Thread per connection for asynchronous message processing.",
+    photoId: "1515378791036-0648a3ef77b2"
   },
   {
     id: "train-booking",
@@ -227,6 +297,7 @@ export const projects = [
       "Complex cancellation workflows",
       "Real-time availability checks"
     ],
-    architecture: "N-tier architecture with clear separation between Controller, Service, and Repository layers."
+    architecture: "N-tier architecture with clear separation between Controller, Service, and Repository layers.",
+    photoId: "1532103054090-334e6e60df43"
   }
 ];

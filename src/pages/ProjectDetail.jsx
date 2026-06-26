@@ -48,7 +48,7 @@ const ProjectDetail = () => {
           </div>
           <div className="glass rounded-[40px] p-2 overflow-hidden border-white/5">
             <img 
-              src={`https://images.unsplash.com/photo-${project.id === 'event-ticketing' ? '1551434678-e076c223a692' : project.id === 'civicshield' ? '1518770660439-4636190af475' : '1558494949-ef010cbdcc31'}?auto=format&fit=crop&q=80&w=1200`} 
+              src={`https://images.unsplash.com/photo-${project.photoId || '1558494949-ef010cbdcc31'}?auto=format&fit=crop&q=80&w=1200`} 
               alt={project.title} 
               className="w-full rounded-[36px]" 
             />
