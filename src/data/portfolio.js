@@ -1,7 +1,7 @@
 export const personalData = {
   name: "Ansh Pathak",
   role: "Software Engineer | Backend Developer | AI Enthusiast",
-  summary: "Software Engineering undergraduate with hands-on experience in backend system design, RESTful API development, and scalable microservices architectures. Proficient in Java, Spring Boot, multithreading, and distributed systems.",
+  summary: "Computer Science undergraduate specializing in AI with hands-on experience building scalable backend systems, distributed applications, and AI-powered platforms. Proficient in Java, Spring Boot, FastAPI, Kafka, PostgreSQL, and React. Strong foundation in System Design, Distributed Systems, and Retrieval-Augmented Generation (RAG).",
   education: {
     institution: "GL Bajaj Institute of Technology and Management",
     degree: "B.Tech CSE (AI)",

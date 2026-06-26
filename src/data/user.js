@@ -18,7 +18,7 @@ const INFO = {
 	homepage: {
 		title: "Software Engineer | Backend Developer | AI Enthusiast",
 		description:
-			"I am a B.Tech Computer Science (Artificial Intelligence) undergraduate with strong foundations in backend engineering and applied machine learning. I enjoy building scalable backend systems using Java and Spring Boot, designing RESTful APIs, and working with relational databases. I also have hands-on experience with machine learning projects involving data preprocessing, feature engineering, and model evaluation. I am actively seeking opportunities to grow as a software engineer through real-world problem solving.",
+			"Computer Science undergraduate specializing in AI with hands-on experience building scalable backend systems, distributed applications, and AI-powered platforms. Proficient in Java, Spring Boot, FastAPI, Kafka, PostgreSQL, and React. Strong foundation in System Design, Distributed Systems, and Retrieval-Augmented Generation (RAG).",
 	},
 
 	about: {
