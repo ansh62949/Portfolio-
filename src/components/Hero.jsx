@@ -57,7 +57,7 @@ const Hero = () => {
               View Projects
             </motion.a>
             <motion.a
-              href="https://drive.google.com/file/d/1XGOXpmEhHh8JM8qcnBn_zljRsWEn7uN4/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1An97dcx4UmldPisK6rqIbg2H6VV2lpg2/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
               whileHover={{ scale: 1.05 }}
