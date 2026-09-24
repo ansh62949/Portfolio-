@@ -1,17 +1,19 @@
 import React from 'react';
 import Hero from '../components/Hero';
+import AboutSection from '../components/AboutSection';
 import TechStack from '../components/TechStack';
 import ProjectSection from '../components/ProjectSection';
-import { ExperienceSection, EducationSection, ContactSection } from '../components/InfoSections';
+import CertificationsSection from '../components/CertificationsSection';
+import { ContactSection } from '../components/InfoSections';
 
 const Home = () => {
   return (
-    <main>
+    <main className="bg-[#050507] text-white min-h-screen">
       <Hero />
-      <ExperienceSection />
+      <AboutSection />
       <TechStack />
       <ProjectSection />
-      <EducationSection />
+      <CertificationsSection />
       <ContactSection />
     </main>
   );
