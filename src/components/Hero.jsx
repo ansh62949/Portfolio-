@@ -165,7 +165,7 @@ const Hero = () => {
                 <img 
                   src="/profile.jpg" 
                   alt="Ansh Pathak - Backend & AI Engineer" 
-                  className="w-full h-full object-cover object-top filter brightness-95 group-hover:scale-105 transition-all duration-700"
+                  className="w-full h-full object-cover object-center filter brightness-95 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
                 
