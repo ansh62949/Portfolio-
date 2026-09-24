@@ -349,25 +349,23 @@ export const projects = [
 
 export const certifications = [
   {
+    title: "Hugging Face Agents Course",
+    issuer: "Hugging Face Instructors",
+    credential: "Certificate of Excellence",
+    date: "September 21, 2026",
+    skills: ["AI Agents", "LangGraph", "Tool Use", "Multi-Agent Workflows"]
+  },
+  {
     title: "Claude Code in Action",
     issuer: "Claude Academy",
     credential: "Course Completion Badge",
     date: "September 23, 2026",
-    skills: ["Claude Code CLI", "Agentic Coding", "Developer Workflows", "AI Pair Programming"],
-    link: ""
-  },
-  {
-    title: "Hugging Face Agents Course",
-    issuer: "Hugging Face",
-    credential: "Certificate of Excellence",
-    date: "September 21, 2026",
-    skills: ["AI Agents", "LangGraph", "Tool Use", "Multi-Agent Workflows"],
-    link: ""
+    skills: ["Claude Code", "AI Pair Programming", "Agentic Workflows", "CLI Automation"]
   },
   {
     title: "IEEE Vihaan 9.0 Hackathon",
     issuer: "IEEE DTU",
-    credential: "Certificate of Participation & Performance",
+    credential: "Certificate of Performance",
     date: "2026",
     skills: ["System Design", "Rapid Prototyping", "Backend Engineering"],
     link: "vihaan_certificate.png"
