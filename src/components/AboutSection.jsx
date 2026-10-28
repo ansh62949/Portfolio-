@@ -43,7 +43,7 @@ const AboutSection = () => {
               My primary technical foundation centers on <strong className="text-white font-semibold">Java 21 & Spring Boot 3.5</strong> for enterprise REST services and microservices, alongside <strong className="text-white font-semibold">Python & FastAPI</strong> for asynchronous AI pipelines. I leverage <strong className="text-sky-400 font-semibold">Apache Kafka</strong> for event streaming decoupling, <strong className="text-sky-400 font-semibold">Redis & Redis GEO</strong> for sub-second spatial querying, and <strong className="text-emerald-400 font-semibold">LangGraph StateGraph</strong> for multi-agent workflows.
             </p>
             <p>
-              I prioritize engineering rigour: containerizing services with <strong className="text-white font-semibold">Docker</strong>, orchestrating deployments with <strong className="text-white font-semibold">Kubernetes</strong> (featuring liveness/readiness probes and self-healing pod replacement), enforcing <strong className="text-white font-semibold">automated Pytest & JUnit suites</strong>, and publishing builds via <strong className="text-white font-semibold">GitHub Actions CI/CD to GHCR</strong>.
+              I prioritize engineering rigour: containerizing services with <strong className="text-white font-semibold">Docker</strong>, orchestrating deployments with <strong className="text-white font-semibold">Kubernetes</strong> (featuring liveness/readiness probes and self-healing pod replacement), enforcing <strong className="text-white font-semibold">automated Pytest test suites</strong>, and publishing builds via <strong className="text-white font-semibold">GitHub Actions CI/CD to GHCR</strong>.
             </p>
           </motion.div>
 

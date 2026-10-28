@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,65 +6,72 @@
 
 @layer base {
   body {
-    @apply bg-black text-white font-sans antialiased selection:bg-primary/30 selection:text-primary;
-    cursor: none;
+    @apply bg-black text-white font-sans antialiased selection:bg-[#E95420]/30 selection:text-[#E95420];
+    overflow-x: hidden;
   }
 }
 
 @layer components {
   .glass {
-    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
   }
   
   .glass-card {
-    @apply glass rounded-2xl p-6 transition-all duration-300 hover:border-primary/50 hover:bg-white/10;
+    @apply glass rounded-2xl p-6 transition-all duration-300 hover:border-[#E95420]/50 hover:bg-white/10;
   }
 
   .text-glow {
-    text-shadow: 0 0 20px rgba(16, 185, 129, 0.5);
+    text-shadow: 0 0 20px rgba(233, 84, 32, 0.5);
   }
 
   .bg-glow {
-    box-shadow: 0 0 50px rgba(16, 185, 129, 0.2);
+    box-shadow: 0 0 50px rgba(233, 84, 32, 0.2);
   }
 
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#E95420] via-amber-400 to-emerald-400;
   }
 }
 
-/* Custom Cursor */
-#custom-cursor {
-  width: 20px;
-  height: 20px;
-  background: white;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: difference;
-  transition: transform 0.1s ease;
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-#custom-cursor-glow {
-  width: 300px;
-  height: 300px;
-  background: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  transform: translate(-50%, -50%);
+@keyframes scaleUp {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
 }
 
-/* Scrollbar */
+.animate-fadeIn {
+  animation: fadeIn 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Linux Scrollbar */
+.custom-scrollbar::-webkit-scrollbar,
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
+  height: 6px;
 }
 
+.custom-scrollbar::-webkit-scrollbar-track,
 ::-webkit-scrollbar-track {
-  @apply bg-black;
+  background: rgba(0, 0, 0, 0.3);
 }
 
+.custom-scrollbar::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb {
-  @apply bg-white/20 rounded-full hover:bg-primary/50 transition-colors;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(233, 84, 32, 0.6);
 }

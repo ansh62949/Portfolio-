@@ -36,7 +36,7 @@ Production-grade developer portfolio for **Ansh Pathak**, Software Engineer spec
 
 ### 3. [HerRide](https://github.com/ansh62949/Herride)
 * **Positioning**: Real-Time Women-Centric Ride-Hailing Platform
-* **Architecture**: Spring Boot 3.5 API Gateway → Redis GEO Spatial Store (GEORADIUS 5km) → Apache Kafka Event Bus (4 Topics) → STOMP WebSockets → Prometheus Metrics & Grafana Observability
+* **Architecture**: Spring Boot 3.5 API Gateway → Redis GEO Spatial Store (GEORADIUS 5km) → Apache Kafka Event Bus (4 Topics) → STOMP WebSockets Live Broadcast
 * **Key Metrics**: 5km Radial Driver Match, ~8s Location Telemetry, 4 Decoupled Kafka Topics
 
 ### 4. AI Mock Interview Coach
@@ -55,7 +55,7 @@ Production-grade developer portfolio for **Ansh Pathak**, Software Engineer spec
 | **AI Engineering** | LangGraph StateGraph, Multi-Agent Systems, RAG, Semantic Search, Model Context Protocol (MCP) |
 | **Data & Storage** | PostgreSQL, pgvector (HNSW Indexing), Qdrant Vector DB, MySQL, MongoDB |
 | **Cloud & Infrastructure** | Docker & Compose, Kubernetes (Deployments, Health Probes, Pod Self-Healing), GitHub Actions CI/CD, GHCR |
-| **Observability & Quality** | Prometheus, Grafana, Pytest, JUnit, Postman |
+| **Quality & Testing** | Pytest, Postman |
 
 ---
 
@@ -63,7 +63,7 @@ Production-grade developer portfolio for **Ansh Pathak**, Software Engineer spec
 
 * 🏆 **Hugging Face Agents Course** — *Certificate of Excellence* (September 21, 2026)
 * 🎓 **Claude Code in Action** — *Course Completion Badge* (Claude Academy, September 23, 2026)
-* 🥈 **Hack the Globe 2026** — *Round 2 Qualifier*
+* 🥈 **Hack the Globe 2025** — *Round 2 Qualifier*
 * ⚡ **LeetCode & Competitive** — *300+ DSA Problems Solved*
 * 💼 **Walmart & HPE** — *Software Engineering Virtual Experience Programs*
 

@@ -1,22 +1,23 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import CustomCursor from './components/CustomCursor';
-import Home from './pages/Home';
+import { Desktop } from './components/desktop/Desktop';
 import ProjectDetail from './pages/ProjectDetail';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
-      <div className="relative bg-black min-h-screen">
-        <CustomCursor />
-        <Navbar />
+      <div className="relative min-h-screen bg-black">
         <Routes>
-          <Route path="/" element={<Home />} />
+          {/* Main Linux Portfolio Desktop OS */}
+          <Route path="/" element={<Desktop />} />
+
+          {/* Standalone Route for Direct Project Deep Links */}
           <Route path="/project/:id" element={<ProjectDetail />} />
+
+          {/* Traditional Web Page Route Fallback */}
+          <Route path="/classic" element={<Home />} />
         </Routes>
-        <Footer />
       </div>
     </Router>
   );
